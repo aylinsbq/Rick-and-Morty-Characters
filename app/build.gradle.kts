@@ -77,6 +77,10 @@ dependencies {
     testImplementation(libs.kotlinx.coroutines.test)
     testImplementation(libs.androidx.core.testing)
     testImplementation(libs.truth)
+
+    // Modules
+    implementation(project(":data"))
+    implementation(project(":domain"))
     
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
