@@ -1,7 +1,7 @@
 package com.arkano.data.model.mapper
 
 import com.arkano.data.model.CharacterDTO
-import com.arkano.domain.domain.model.Character
+import com.arkano.domain.model.Character
 
 /**
  * Maps a [CharacterDTO] (Data Layer) and a [Character] (Domain Layer).

@@ -1,4 +1,4 @@
-package com.arkano.domain.domain.model
+package com.arkano.domain.model
 
 data class Character(
     val id: Int,

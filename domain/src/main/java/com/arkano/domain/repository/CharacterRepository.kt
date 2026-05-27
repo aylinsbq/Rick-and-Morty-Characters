@@ -1,6 +1,6 @@
-package com.arkano.domain.domain.repository
+package com.arkano.domain.repository
 
-import com.arkano.domain.domain.model.Character
+import com.arkano.domain.model.Character
 
 interface CharacterRepository {
     /**
