@@ -2,6 +2,7 @@ package com.arkano.data.model.mapper
 
 import com.arkano.data.model.CharacterDTO
 import com.arkano.domain.model.Character
+import com.arkano.domain.model.CharacterStatus
 
 /**
  * Maps a [CharacterDTO] (Data Layer) and a [Character] (Domain Layer).
@@ -11,7 +12,7 @@ fun CharacterDTO.toDomain(): Character {
     return Character(
         id = this.id,
         name = this.name,
-        status = this.status,
+        status = CharacterStatus.fromValue(status),
         image = this.image
     )
 }
