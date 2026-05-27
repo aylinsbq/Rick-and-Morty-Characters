@@ -1,11 +1,9 @@
 plugins {
     alias(libs.plugins.android.library)
-    alias(libs.plugins.kotlin.serialization)
-
 }
 
 android {
-    namespace = "com.arkano.data"
+    namespace = "com.arkano.domain"
     compileSdk = 36
 
     defaultConfig {
@@ -31,16 +29,6 @@ android {
 }
 
 dependencies {
-    // Network
-    implementation(libs.retrofit)
-    implementation(libs.retrofit.serialization)
-    implementation(libs.okhttp)
-    implementation(libs.okhttp.logging)
-    implementation(libs.kotlinx.serialization.json)
-
-    //Modules
-    implementation(project(":domain"))
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

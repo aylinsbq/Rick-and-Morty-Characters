@@ -25,3 +25,4 @@ dependencyResolutionManagement {
 rootProject.name = "Rick and Morty Characters"
 include(":app")
 include(":data")
+include(":domain")
