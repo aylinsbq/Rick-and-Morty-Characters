@@ -37,9 +37,7 @@ class CharacterListViewModel @Inject constructor(
                 },
                 onFailure = { error ->
                     _uiState.value = CharacterListUiState.Error(
-                        message = error.message ?: "Unknown error",
-                        canRetry = true,
-                        lastSuccessfulData = (uiState.value as? CharacterListUiState.Success)?.characters ?: emptyList()
+                        message = error.message ?: "Unknown error"
                     )
                 }
             )

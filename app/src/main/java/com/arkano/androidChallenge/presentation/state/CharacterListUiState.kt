@@ -13,8 +13,6 @@ sealed class CharacterListUiState {
     ) : CharacterListUiState()
     
     data class Error(
-        val message: String,
-        val canRetry: Boolean = true,
-        val lastSuccessfulData: List<Character> = emptyList()
+        val message: String
     ) : CharacterListUiState()
 }

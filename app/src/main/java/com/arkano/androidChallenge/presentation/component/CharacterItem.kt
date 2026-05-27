@@ -58,7 +58,7 @@ fun CharacterItem(
                 }
 
                 Text(
-                    text = "${character.status.value}",
+                    text = character.status.value,
                     style = MaterialTheme.typography.bodyMedium,
                     color = statusColor
                 )
