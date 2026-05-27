@@ -1,7 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.serialization)
-
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -38,7 +39,11 @@ dependencies {
     implementation(libs.okhttp.logging)
     implementation(libs.kotlinx.serialization.json)
 
-    //Modules
+    // DI (Hilt)
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
+
+    // Modules
     implementation(project(":domain"))
 
     implementation(libs.androidx.core.ktx)
